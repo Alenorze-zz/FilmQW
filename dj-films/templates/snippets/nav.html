@@ -1,0 +1,18 @@
+<div class='container'>
+<div class='row text-center'>
+<div clsas='col-sm-6 col-sm-offset-3'>
+<h1>DjFilms</h1>
+<a href='{% url "home" %}'>Home</a>
+{% if request.user.is_authenticated %}
+<a href='{% url "films:list" %}'>Films</a>
+<a href='{% url "filmsession:list" %}'>Your sessions</a>
+<a href='{% url "logout" %}'>Logout</a>
+{% else %}
+<a href='{% url "register" %}'>Register</a>
+<a href='{% url "login" %}'>Login</a>
+
+{% endif %}
+</div>
+</div>
+
+</div><hr/>

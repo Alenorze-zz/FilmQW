@@ -31,6 +31,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="filmgenre\admin.py" />
+    <Compile Include="filmgenre\apps.py" />
+    <Compile Include="filmgenre\migrations\__init__.py" />
+    <Compile Include="filmgenre\models.py" />
+    <Compile Include="filmgenre\tests.py" />
+    <Compile Include="filmgenre\views.py" />
+    <Compile Include="filmgenre\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="dj_films\__init__.py" />
     <Compile Include="dj_films\settings.py" />
@@ -39,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dj_films\" />
+    <Folder Include="filmgenre\" />
+    <Folder Include="filmgenre\migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
